@@ -5,6 +5,8 @@ layout: "recipes"
 title: "ratatouille (confit byaldi)"
 serving: "serves 2"
 
+featured-image: icon.png
+
 origin: 
  - "sam's eats "
  - "ratatouille (disney movie, 2007)"

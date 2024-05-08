@@ -1,86 +1,85 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{{ .Title }}</title>
-	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-	{{ with .OutputFormats.Get "RSS" -}}
-		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
-	{{- end }}
-</head>
-<body>
-	{{ partial "header" . }}
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ .Title }} - navya's recipe book</title>
+        <link rel="icon" type="image/x-icon" href="{{ "favicon-2.png" | relURL }}">
+        <link rel="stylesheet" href="{{ "css/recipe-style.css" | relURL }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+
+        {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+        {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+        {{ with .OutputFormats.Get "RSS" -}}
+            {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+        {{- end }}
+    </head>
+
+    <body>
+        
+	{{ partial "header-recipe" . }}
 	
+        <div class="details">
+			<p>serving size: <span class="tag">{{ .Params.serving }}</span></p>
+			<p>recipe origin: <span class="tag">{{ .Params.origin }}</span></p>
+			<p>tags: <span class="tag">{{ .Params.tags }}</span> </p>
+		</div>
+        
+        <div class="divider"></div>
 
-	<img src="icon.png"/>
+		<div class="card">
+			<h2>ingredients</h2>
+				<div class="row">
+				    <ul>{{ range .Params.ingredients }}
+		              <li>
+		              {{ . | markdownify }}
+		              </li>
+		              {{ end }}
+                    </ul>
+                </div>
+            
+            <h2>instructions</h2>
+				<ol>{{ range .Params.instructions }}
+		          <li>
+		          {{ . | markdownify }}
+		          </li>
+		          {{ end }} 
+                </ol>
+            
+            <h2>notes</h2>
+				<ul>{{ range .Params.notes }}
+		          <li>
+		          {{ . | markdownify }}
+		          </li>
+		          {{ end }}
+                </ul>
+        </div>
+        
+        <div class="divider"></div>
 
-	<h1>{{ .Params.title }}</h1>
+		<div class="description">
+			<h3><span class="thoughts">navya's thoughts</span></h3>
+                <p>{{ .Params.description | markdownify }}</p>
+        </div>
+        
+        <div class="divider"></div>
 
-	<div>{{ .Params.serving }}</div>
-
-
-	<h4>Origins</h4>
-	<ul>
-		{{ range .Params.origin }}
-		<li>
-		{{ . | markdownify }}
-		</li>
-		{{ end }}
-	</ul>
-
-	<h4>Tags</h4>
-	<ul>
-		{{ range .Params.tags }}
-		<li>
-		{{ . | markdownify }}
-		</li>
-		{{ end }}
-	</ul>
-
-	<h4>ingredients</h4>
-	<ul>
-		{{ range .Params.ingredients }}
-		<li>
-		{{ . | markdownify }}
-		</li>
-		{{ end }}
-	</ul>
-
-	<h4>instructions</h4>
-	<ul>
-		{{ range .Params.instructions }}
-		<li>
-		{{ . | markdownify }}
-		</li>
-		{{ end }}
-	</ul>
-
-
-	<h4>notes</h4>
-	<ul>
-		{{ range .Params.notes }}
-		<li>
-		{{ . | markdownify }}
-		</li>
-		{{ end }}
-	</ul>
-
-	<p>		{{ .Params.description | markdownify }} </p>
-
-	<h4>citations</h4>
-	<ul>
-		{{ range .Params.citations }}
-		<li>
-		{{ . | markdownify }}
-		</li>
-		{{ end }}
-	</ul>
-
-
-
-	{{ partial "footer" . }}
-</body>
-</html>
+		<div class="citations">
+			<h3><span class="thoughts">recipe origins</span></h3>
+                <p>the following is a list of places where i sourced this recipe from, before adding some of my own changes. check them out!</p>
+                    <ul>{{ range .Params.citations }}
+                        <li>
+                        {{ . | markdownify }}
+                        </li>
+                        {{ end }}
+                    </ul>
+        </div>
+            
+        <div class="button">
+			<button onclick="javascript:history.back()">&lt; back to recipe book</button>
+		</div>
+        
+    {{ partial "footer-recipe" . }}

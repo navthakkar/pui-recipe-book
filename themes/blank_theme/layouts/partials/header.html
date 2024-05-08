@@ -1,12 +1,5 @@
-<header>
-	<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-	{{ with .Site.Menus.main }}
-	<nav>
-		<ul>
-			{{ range . }}
-			<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-			{{ end }}
-		</ul>
-	</nav>
-	{{ end }}
+<header class="header">
+    <a href="index.html"><h1>navya's recipe book</h1></a>
+    <a href="nav/nav-recipe-guide.html" class="nav"><h2><span class="menu">recipe guide</span></h2></a>
+    <a href="nav/nav-about.html" class="nav"><h2><span class="menu">about</span></h2></a>
 </header>

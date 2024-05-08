@@ -1,13 +1,18 @@
-<article style="float: left; border: solid 1px black;">
-	<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+
+     <a href={{ .Permalink }}>
+        <div class="recipe">
+             {{ $image := .Resources.Get "icon.png" }}
+                    <img src="{{ $image.RelPermalink }}">
+				<section class="description">
+				    <h2>{{ .Title }}</h2>
+                    <p>tags: <span class="tag">{{ .Params.tags }}</span></p>
+				</section>
+         </div>
+    </a>
+	
+    <!--<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <img src="icon.png"/>
 	<!-- <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time> -->
-	{{ range .Params.tags }}
-	<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-	{{ end }}
-	<div>
-		{{ .Summary }}
-		{{ if .Truncated }}
-			<a href="{{ .Permalink }}">Read more...</a>
-		{{ end }}
-	</div>
-</article>
+	<!--{{ range .Params.tags }}
+	{{ end }}-->
+	
