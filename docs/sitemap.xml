@@ -2,25 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/entr%C3%A9e/</loc>
+    <lastmod>2024-05-08T16:55:55-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/french/</loc>
+    <lastmod>2024-05-08T16:55:55-04:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-05-08T04:56:28-04:00</lastmod>
+    <lastmod>2024-05-08T16:55:55-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/recipes/banana-bacon/</loc>
+    <lastmod>2024-05-08T16:55:55-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/recipes/</loc>
-    <lastmod>2024-05-08T04:56:28-04:00</lastmod>
+    <lastmod>2024-05-08T16:55:55-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-05-08T16:55:55-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vegan/</loc>
+    <lastmod>2024-05-08T16:55:55-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/recipes/spaghetti-aglio-olio/</loc>
     <lastmod>2024-05-08T04:56:28-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/entr%C3%A9e/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/french/</loc>
-  </url><url>
     <loc>http://localhost:1313/recipes/ratatouille/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/vegan/</loc>
   </url>
 </urlset>
