@@ -5,10 +5,8 @@ layout: "recipes"
 title: "ratatouille (confit byaldi)"
 serving: "serves 2"
 
-featured-image: icon.png
-
 origin: 
- - "sam's eats "
+ - "sam's eats"
  - "ratatouille (disney movie, 2007)"
 
 tags:
@@ -49,5 +47,3 @@ citations:
  - "probably like many of you, i was first introduced to the dish ratatouille from the 2007 disney movie! i’ve always wanted to be able to cook it, & i have finally learned how! remi & linguini are my childhood favorites :)"
  - "sam's eats: ratatouille (confit byaldi) ( [link](https://www.samseatsonline.com/post/ratatouille-confit-byaldi) )"
 ---
-
-summary text here
