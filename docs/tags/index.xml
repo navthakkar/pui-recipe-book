@@ -2,36 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on My New Hugo Site</title>
-    <link>http://example.org/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>entrée</title>
-      <link>http://example.org/tags/entr%C3%A9e/</link>
+      <title>Entrée</title>
+      <link>http://localhost:1313/tags/entr%C3%A9e/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/tags/entr%C3%A9e/</guid>
+      <guid>http://localhost:1313/tags/entr%C3%A9e/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>french</title>
-      <link>http://example.org/tags/french/</link>
+      <title>French</title>
+      <link>http://localhost:1313/tags/french/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/tags/french/</guid>
+      <guid>http://localhost:1313/tags/french/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>vegan</title>
-      <link>http://example.org/tags/vegan/</link>
+      <title>Vegan</title>
+      <link>http://localhost:1313/tags/vegan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/tags/vegan/</guid>
+      <guid>http://localhost:1313/tags/vegan/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

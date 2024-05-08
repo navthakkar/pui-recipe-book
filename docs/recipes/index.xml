@@ -2,18 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recipes on My New Hugo Site</title>
-    <link>http://example.org/recipes/</link>
+    <link>http://localhost:1313/recipes/</link>
     <description>Recent content in Recipes on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/recipes/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 May 2024 04:56:28 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/recipes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spaghetti Aglio Olio</title>
+      <link>http://localhost:1313/recipes/spaghetti-aglio-olio/</link>
+      <pubDate>Wed, 08 May 2024 04:56:28 -0400</pubDate>
+      <guid>http://localhost:1313/recipes/spaghetti-aglio-olio/</guid>
+      <description>type: &amp;ldquo;recipes&amp;rdquo; layout: &amp;ldquo;recipes&amp;rdquo;&#xA;title: &amp;ldquo;ratatouille (confit byaldi)&amp;rdquo; serving: &amp;ldquo;serves 2&amp;rdquo;&#xA;origin:&#xA;&amp;ldquo;sam&amp;rsquo;s eats &amp;quot; &amp;ldquo;ratatouille (disney movie, 2007)&amp;rdquo; tags:&#xA;&amp;ldquo;vegan&amp;rdquo; &amp;ldquo;french&amp;rdquo; &amp;ldquo;entrée&amp;rdquo; ingredients:&#xA;&amp;ldquo;2 roma tomatoes (1 for slicing &amp;amp; 1 for the sauce)&amp;rdquo; &amp;ldquo;½ yellow zucchini&amp;rdquo; &amp;ldquo;½ green zucchini&amp;rdquo; &amp;ldquo;½ aubergine (japanese aubergines are best!)&amp;rdquo; &amp;ldquo;110 g sweet mini peppers (yellow &amp;amp; red)&amp;rdquo; &amp;ldquo;½ onion (roughly chopped)&amp;rdquo; &amp;ldquo;1.5 garlic cloves (minced)&amp;rdquo; &amp;ldquo;salt &amp;amp; pepper for seasoning&amp;rdquo; &amp;ldquo;large sprig of thyme (stalks removed)&amp;rdquo; &amp;ldquo;2 tbsp olive oil&amp;rdquo; instructions:</description>
+    </item>
     <item>
       <title>ratatouille (confit byaldi)</title>
-      <link>http://example.org/recipes/ratatouille/</link>
+      <link>http://localhost:1313/recipes/ratatouille/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/recipes/ratatouille/</guid>
+      <guid>http://localhost:1313/recipes/ratatouille/</guid>
       <description>summary text here</description>
     </item>
-    
   </channel>
 </rss>
